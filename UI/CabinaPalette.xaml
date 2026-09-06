@@ -123,8 +123,7 @@
                 <TextBlock Text="⚡ CABINA ELÉCTRICA 3D"
                            FontFamily="Consolas"
                            FontSize="11"
-                           Foreground="{StaticResource GoldBrush}"
-                           LetterSpacing="2"/>
+                           Foreground="{StaticResource GoldBrush}"/>
                 <TextBlock Text="Configurador de transformación MT/BT"
                            Foreground="{StaticResource DimBrush}"
                            FontSize="10"
