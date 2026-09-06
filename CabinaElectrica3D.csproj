@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -12,9 +12,9 @@
     <LangVersion>latest</LangVersion>
     <!--
       Ajusta AcadInstallPath a tu ruta de instalación de AutoCAD.
-      Ejemplo: C:\Program Files\Autodesk\AutoCAD 2025
+      Ejemplo: C:\Program Files\Autodesk\AutoCAD 2027
     -->
-    <AcadInstallPath Condition="'$(AcadInstallPath)' == ''">C:\Program Files\Autodesk\AutoCAD 2025</AcadInstallPath>
+    <AcadInstallPath Condition="'$(AcadInstallPath)' == ''">C:\Program Files\Autodesk\AutoCAD 2027</AcadInstallPath>
   </PropertyGroup>
 
   <ItemGroup>
