@@ -126,7 +126,7 @@ public sealed class CasetaBuilder : IElementBuilder
         const double ventW = 0.40;
         const double ventH = 0.20;
         const double ventZOffset = 0.30;        // altura desde el piso interior
-        const double ventZOffsetHigh = _p_Height() - 0.50; // cerca del techo
+        double ventZOffsetHigh = _p.Height - 0.50; // cerca del techo
 
         BuildGrille(tr, db,
             x: origin.X - _p.WallThickness,
@@ -155,7 +155,4 @@ public sealed class CasetaBuilder : IElementBuilder
 
         grille.AddToModelSpace(tr, db);
     }
-
-    // Acceso a _p.Height sin capturar en lambda (C# limitation workaround)
-    private double _p_Height() => _p.Height;
 }
