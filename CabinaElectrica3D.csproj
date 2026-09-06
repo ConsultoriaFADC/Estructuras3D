@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>CabinaElectrica3D</AssemblyName>
+    <RootNamespace>CabinaElectrica3D</RootNamespace>
+    <Platforms>x64</Platforms>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <!--
+      Ajusta AcadInstallPath a tu ruta de instalación de AutoCAD.
+      Ejemplo: C:\Program Files\Autodesk\AutoCAD 2025
+    -->
+    <AcadInstallPath Condition="'$(AcadInstallPath)' == ''">C:\Program Files\Autodesk\AutoCAD 2025</AcadInstallPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- AutoCAD .NET API — Private=False evita copiar las DLL al output -->
+    <Reference Include="acdbmgd">
+      <HintPath>$(AcadInstallPath)\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>$(AcadInstallPath)\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcCoreMgd">
+      <HintPath>$(AcadInstallPath)\AcCoreMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
