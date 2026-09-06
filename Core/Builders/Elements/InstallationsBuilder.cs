@@ -40,7 +40,7 @@ public sealed class InstallationsBuilder : IElementBuilder
     private void BuildCableTrays(Transaction tr, Database db, Point3d origin)
     {
         const double trayHeight = 0.04;     // altura de perfil de bandeja
-        double trayLayer = LayerService.Layers.Bandejas.Name;
+        string trayLayer = LayerService.Layers.Bandejas.Name;
 
         double z    = origin.Z + _p.TrayHeight;
         double w    = _p.TrayWidth;
