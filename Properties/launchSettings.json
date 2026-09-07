@@ -6,7 +6,7 @@
     "Perfil 1": {
       "commandName": "Executable",
       "executablePath": "C:\\Program Files\\Autodesk\\AutoCAD 2027\\acad.exe",
-      "commandLineArgs": "/nologo /b \"C:\\Proyectos\\Estructuras3D\\CabinaElectrica3D\\bin\\Debug\\net8.0-windows\\win-x64\\test.scr\""
+      "commandLineArgs": "/nologo /b \"C:\\Proyectos\\Estructuras3D\\CabinaElectrica3D\\bin\\Debug\\net10.0-windows\\win-x64\\test.scr\""
     }
   }
 }
