@@ -33,4 +33,11 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Script de depuración: se copia al output para que el perfil "Perfil 1" pueda ejecutarlo -->
+    <None Include="test.SCR">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

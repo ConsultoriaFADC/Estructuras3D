@@ -1,5 +1,5 @@
 ﻿FILEDIA 0
-(command "NETLOAD" "C:\\Proyectos\\Estructuras3D\\CabinaElectrica3D\\bin\\Debug\\net10.0-windows\\win-x64\\CabinaElectrica3D.dll")
+(command "NETLOAD" "C:\\Proyectos\\Estructuras3D\\CabinaElectrica3D\\bin\\x64\\Debug\\net10.0-windows\\CabinaElectrica3D.dll")
 ZOOMWHEEL 1
 _OPEN "C:\Proyectos\SG0.dwg"
 FADC_NEWDRAWINGWITHTEMPLATE_V222
